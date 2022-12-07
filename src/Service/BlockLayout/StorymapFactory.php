@@ -3,7 +3,7 @@ namespace Storymap\Service\BlockLayout;
 
 use Interop\Container\ContainerInterface;
 use Storymap\Site\BlockLayout\Storymap;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class StorymapFactory implements FactoryInterface
 {
