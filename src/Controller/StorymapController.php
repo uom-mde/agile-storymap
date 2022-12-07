@@ -4,8 +4,8 @@ namespace Storymap\Controller;
 use Doctrine\ORM\EntityManager;
 use Omeka\Api\Exception\NotFoundException;
 use Omeka\Stdlib\Message;
-use Zend\Mvc\Controller\AbstractActionController;
-use Zend\View\Model\JsonModel;
+use Laminas\Mvc\Controller\AbstractActionController;
+use Laminas\View\Model\JsonModel;
 
 class StorymapController extends AbstractActionController
 {

@@ -4,9 +4,9 @@ namespace Storymap\Form;
 
 use Omeka\Form\Element\PropertySelect;
 use Omeka\Form\Element\ResourceSelect;
-use Zend\Form\Element;
-use Zend\Form\Fieldset;
-use Zend\Form\Form;
+use Laminas\Form\Element;
+use Laminas\Form\Fieldset;
+use Laminas\Form\Form;
 
 class StorymapBlockForm extends Form {
 
@@ -196,7 +196,7 @@ class StorymapBlockForm extends Form {
     ]);
     $argsFieldset->add([
       'name' => 'map_background',
-      'type' => 'Zend\Form\Element\Color',
+      'type' => 'Laminas\Form\Element\Color',
       'options' => [
         'info' => 'Optional background color for Gigapixel maps',
         'label' => 'Select Gigapixel background color', // @translate

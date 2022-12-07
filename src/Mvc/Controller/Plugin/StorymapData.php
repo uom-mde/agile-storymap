@@ -2,7 +2,7 @@
 
 namespace Storymap\Mvc\Controller\Plugin;
 
-use Zend\Mvc\Controller\Plugin\AbstractPlugin;
+use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
 
 /**
  * Class StorymapData

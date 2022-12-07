@@ -10,8 +10,8 @@ use Omeka\Entity\SitePageBlock;
 use Omeka\Site\BlockLayout\AbstractBlockLayout;
 use Omeka\Stdlib\ErrorStore;
 use Storymap\Form\StorymapBlockForm;
-use Zend\Form\FormElementManager\FormElementManagerV3Polyfill as FormElementManager;
-use Zend\View\Renderer\PhpRenderer;
+use Laminas\Form\FormElementManager\FormElementManagerV3Polyfill as FormElementManager;
+use Laminas\View\Renderer\PhpRenderer;
 
 class Storymap extends AbstractBlockLayout {
 
@@ -90,9 +90,9 @@ class Storymap extends AbstractBlockLayout {
   public function prepareRender(PhpRenderer $view) {
 
     $view->headLink()
-      ->appendStylesheet('//cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css');
+      ->appendStylesheet('http://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css');
     $view->headScript()
-      ->appendFile('//http://cdn.knightlab.com/libs/storymapjs/0.7.2/js/storymap.js');
+      ->appendFile('http://cdn.knightlab.com/libs/storymapjs/0.7.2/js/storymap.js');
 
   }
 
